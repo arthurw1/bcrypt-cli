@@ -58,6 +58,6 @@
   "version": "1.0.0",
   "preferGlobal": true,
   "bin": {
-    "bcrypt": "./lib-commmonjs/index.js"
+    "bcrypt": "./lib-commonjs/index.js"
   }
 }
