@@ -39,6 +39,7 @@
     "format": "skuba format",
     "lint": "skuba lint",
     "release": "yarn build && skuba release",
+    "start": "ts-node src/index.ts",
     "test": "skuba test",
     "test:ci": "skuba test --coverage",
     "test:watch": "skuba test --watch"
@@ -51,5 +52,9 @@
     "version": "4.2.0"
   },
   "types": "./lib-types/index.d.ts",
-  "version": "0.0.0-semantically-released"
+  "version": "0.0.0-semantically-released",
+  "preferGlobal": true,
+  "bin": {
+    "bcrypt": "./lib-commmonjs/index.js"
+  }
 }
