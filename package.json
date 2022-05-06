@@ -7,7 +7,9 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "commander": "9.2.0"
+  },
   "description": "bcrypt utility CLI",
   "devDependencies": {
     "@types/node": "^16.0.0",
