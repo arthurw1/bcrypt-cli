@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
-    "commander": "9.2.0"
+    "commander": "9.2.0",
+    "skuba-dive": "2.0.0"
   },
   "description": "bcrypt utility CLI",
   "devDependencies": {
