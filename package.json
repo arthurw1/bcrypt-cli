@@ -8,11 +8,16 @@
     }
   },
   "dependencies": {
-    "commander": "9.2.0"
+    "bcryptjs": "2.4.3",
+    "commander": "9.2.0",
+    "skuba-dive": "2.0.0",
+    "uuid": "8.3.2"
   },
   "description": "bcrypt utility CLI",
   "devDependencies": {
+    "@types/bcryptjs": "2.4.2",
     "@types/node": "^16.0.0",
+    "@types/uuid": "8.3.4",
     "commitizen": "^4.2.4",
     "skuba": "4.2.0"
   },
@@ -37,6 +42,7 @@
     "format": "skuba format",
     "lint": "skuba lint",
     "release": "yarn build && skuba release",
+    "start": "ts-node src/index.ts",
     "test": "skuba test",
     "test:ci": "skuba test --coverage",
     "test:watch": "skuba test --watch"
@@ -49,5 +55,9 @@
     "version": "4.2.0"
   },
   "types": "./lib-types/index.d.ts",
-  "version": "0.0.0-semantically-released"
+  "version": "1.0.0",
+  "preferGlobal": true,
+  "bin": {
+    "bcrypt": "./lib-commmonjs/index.js"
+  }
 }
