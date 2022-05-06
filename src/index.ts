@@ -7,3 +7,5 @@ program
   .action(function () {
     console.log('gen pair');
   });
+
+program.parse(process.argv);
