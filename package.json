@@ -1,0 +1,51 @@
+{
+  "bugs": {
+    "url": "https://github.com/arthurw1/bcrypt-cli/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {},
+  "description": "bcrypt utility CLI",
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "commitizen": "^4.2.4",
+    "skuba": "4.2.0"
+  },
+  "files": [
+    "lib*/**/*.d.ts",
+    "lib*/**/*.js",
+    "lib*/**/*.js.map",
+    "lib*/**/*.json"
+  ],
+  "homepage": "https://github.com/arthurw1/bcrypt-cli#readme",
+  "license": "MIT",
+  "main": "./lib-commonjs/index.js",
+  "module": "./lib-es2015/index.js",
+  "name": "bcrypt-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurw1/bcrypt-cli.git"
+  },
+  "scripts": {
+    "build": "skuba build-package",
+    "commit": "cz",
+    "format": "skuba format",
+    "lint": "skuba lint",
+    "release": "yarn build && skuba release",
+    "test": "skuba test",
+    "test:ci": "skuba test --coverage",
+    "test:watch": "skuba test --watch"
+  },
+  "sideEffects": false,
+  "skuba": {
+    "entryPoint": "src/index.ts",
+    "template": "oss-npm-package",
+    "type": "package",
+    "version": "4.2.0"
+  },
+  "types": "./lib-types/index.d.ts",
+  "version": "0.0.0-semantically-released"
+}
