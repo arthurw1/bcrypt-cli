@@ -1,7 +1,9 @@
-/**
- * Writes the module name to stdout.
- * Thrilling stuff.
- */
-export const log = () =>
-  /* eslint-disable-next-line no-console */
-  console.log('bcrypt-cli');
+import 'skuba-dive/register';
+import { program } from 'commander';
+
+program
+  .command('gen-pair')
+  .description('Generate a UUID + bcrypt hash pair')
+  .action(function () {
+    console.log('gen pair');
+  });
